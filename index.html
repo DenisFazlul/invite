@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autumn B-Day Party</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --burgundy: #800020;
+      --pink: #f3c3cd;
+      --white: #ffffff;
+      --dark-bg: #1e1b1b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+     
+
+    html, body {
+      scroll-behavior: smooth;
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--dark-bg);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .mainBgColor {
+       background-color: green; 
+    }
+
+    .slide {
+      height: 100vh;
+      width: 100%;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-family: Montserrat;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-family:Montserrat;
+    }
+
+    .slide.red {
+      background-color: var(--burgundy);
+      color: #fff;
+    }
+
+    .slide.white {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .time {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .color-box {
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      margin: 5px 5px 0 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .burgundy { background-color: var(--burgundy); }
+    .pink { background-color: var(--pink); }
+    .white-color { background-color: var(--white); }
+
+    .footer {
+      font-size: 14px;
+      color: #aaa;
+      position: absolute;
+      bottom: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 24px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .slide {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Секция 1: Приглашение с фоном через CSS -->
+<section class="slide" style="
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('обложка.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6);
+">
+  <!-- Наложение затемнения -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
+  "></div>
+
+  <!-- Текст приглашения -->
+  <div style="position: relative; z-index: 1; padding: 20px; max-width: 90vw;">
+    <h1 style="
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    ">Дорогие друзья!</h1>
+    <p style="
+      font-size: 1.5rem;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+      max-width: 600px;
+      margin: 0 auto;
+    ">
+      Приглашаю вас отпраздновать мой день рождения! Будет весело и уютно.
+    </p>
+  </div>
+</section>
+
+
+ 
+  
+
+ 
+  
+  
+<!-- Секция 2 локация -->
+  <section class="slide" style="padding: 0; flex-direction: column;">
+    <!-- Верхняя половина: ЛОКАЦИЯ -->
+    <div class="mainBgColor" style="
+    
+      color: #fff;
+      height: 50%;
+      width: 100%;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    ">
+      <h2 class="title">ЛОКАЦИЯ</h2>
+      <p class="subtitle">Праздник будет проходить в зале BASE.</p>
+      <p class="subtitle">г. Москва, ул. Живописная, д. 18, к. 125</p>
+    </div>
+  
+     <!-- Нидняя половина: ЛОКАЦИЯ -->
+     <div style="
+     position: relative;
+     height: 50%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: #fff;
+     background-image: url('map.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+   ">
+     <!-- Полупрозрачная тёмная подложка для читаемости текста -->
+     <div style="
+       position: absolute;
+       top: 0; left: 0;
+       width: 100%; height: 100%;
+       background-color: rgba(0,0,0,0.4);
+       z-index: 0;
+     "></div>
+   
+     <!-- Контент -->
+     <div style="position: relative; z-index: 1;">
+        
+     </div>
+   </div>
+   
+  </section>
+  
+
+<!-- Секция 3 календарь и пожелание -->
+<section class="slide" style="padding: 0; flex-direction: column;">
+   
+    <!-- верх календарь -->
+   <div style="
+    background-color: #fff;
+    color: #000;
+    height: 50vh;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  ">
+    <h2 class="title" style="color: #000; margin-bottom: 20px;">Август</h2>
+
+    <div style="
+    border-color: #1e1b1b;
+      border: 3px solid;
+      border-radius: 12px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(128,0,32,0.3);
+      user-select: none;
+    ">
+      <!-- Неделя: Пн–Вс -->
+      <div style="display: flex; justify-content: space-between; color: #800020; font-weight: 600; font-size: 14px; margin-bottom: 10px;">
+        <div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div>
+      </div>
+
+      <!-- Числа недели -->
+      <div style="display: flex; justify-content: space-between; color: #800020; font-weight: 600; font-size: 18px;">
+        <div style="
+          width: 36px;
+          height: 36px;
+          line-height: 36px;
+          border-radius: 50%;
+          background-color: #800020;
+          color: #fff;
+          box-shadow: 0 0 8px #800020aa;
+          user-select: none;
+        ">25</div>
+
+        <div style="width: 36px;">26</div>
+        <div style="width: 36px;">27</div>
+        <div style="width: 36px;">28</div>
+        <div style="width: 36px;">29</div>
+        <div style="width: 36px;">30</div>
+        <div style="width: 36px;">31</div>
+      </div>
+    </div>
+
+    <p style="margin-top: 20px; font-weight: 600; font-size: 18px; color: #800020;">
+      Время: 19:00
+    </p>
+  
+</div>
+   
+  <!-- верх пожелания -->
+    <div class="mainBgColor" style="
+    
+    color: #fff;
+    height: 50vh;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  ">
+    <h2 class="title">ПОЖЕЛАНИЯ</h2>
+    <p class="subtitle">
+      Никаких подарков — только хорошие вибрации!<br>
+      Если хочется — принесите тёплое письмо или<br>
+      воспоминание о нас 💌
+    </p>
+    <div class="footer">@kayumiso_ / 2024</div>
+  </div>
+    
+  </section>
+
+  <section class="slide" style="padding: 0; flex-direction: column;">
+   
+    
+    
+   
+
+     
+    <!-- Нижняя половина: до встречи -->
+    <div  style="
+     
+      color: #fff;
+      height: 100vh;
+      width: 100%;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    ">
+      <h2 class="title">До встречи</h2>
+      <p class="subtitle">
+        
+      </p>
+      <div class="footer">@kayumiso_ / 2024</div>
+    </div>
+  </section>
+  
+
+</body>
+</html>
